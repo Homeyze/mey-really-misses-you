@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<div class="language-toggle">
+    <button onclick="toggleLanguage('en')" style="color:rgb(166, 116, 166);">English</button>
+    <button onclick="toggleLanguage('fa')" style="color:rgb(166, 116, 166);">فارسی</button>
+  </div>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mey misses you!</title>
+  <style>
+  select{ background-color:rgb(166, 116, 166);}
+    body{
+	     width:1100px;
+		 background:rgb(245, 208, 245);
+		 max-width:95%;
+		 margin:auto;
+		 }
+	header{
+	    background:rgb(166, 116, 166);}
+	section{	background:rgb(199, 173, 199);}
+	img{display: block;
+  margin-left: auto;
+  margin-right: auto;
+		}
+  </style>
+ 
+</head>
+<body>
+<header>
+ <div class="content">
+    <h1 class="persian" style="text-align:center;">:(سلام خره دلم برات تنگ شده
+	</h1>.
+    <h1 class="english" style="display: none; text-align:center; ">Hey! I miss you!</h1>
+  </div>
+  <div class="content">
+    <h2 class="persian" style="text-align:center;">!بله واقعا نشستم برای تو وب سایت دو زبانه زدم
+	</h2>.
+    <h2 class="english" style="display: none; text-align:center; ">Yes I made this just for you Mohammadreza!</h2>
+  </div>
+  </header>
+ 
+
+  <script>
+    function toggleLanguage(lang) {
+      const persianElements = document.querySelectorAll('.persian');
+      const englishElements = document.querySelectorAll('.english');
+
+      if (lang === 'fa') {
+        persianElements.forEach(element => {
+          element.style.display = 'block';
+        });
+        englishElements.forEach(element => {
+          element.style.display = 'none';
+        });
+      } else {
+        persianElements.forEach(element => {
+          element.style.display = 'none';
+        });
+        englishElements.forEach(element => {
+          element.style.display = 'block';
+        });
+      }
+    }
+  </script>
+<section>
+<div class="content">
+    <h2 class="persian" style="text-align:center;">!شاید از خودت بپرسی که چرا یه وب سایت ساختم که توش فقط به تو بگم دلم برات تنگ شده
+	</h2>.
+    <h2 class="english" style="display: none; text-align:center; ">Why a website dedicated to missing you, you ask?</h2>
+  </div>
+  
+  <div class="content">
+    <p class="persian">دارم یاد میگیرم چطور فایل کد رو توی سرور جیت هاب اپلود کنم.این وسط دلمم برات تنگ شد گفتم بهت خبر بدم.خیر سرم گنده گوزی کردم الان دارم یاد میگیرم چطور سایت دو زبانه بزنم.امیدوارم فونت تو گوشیت داغون نشه. حال هم ندارم الان یاد بگیرم فونت اضافه کنم. پس لطفا همینو ازم بپذیر و بیا نازم کن چون دلم تنگ شده.
+	</p>.
+    <p class="english" style="display: none;">i'm trying my hardest to make a bilingual website and i'm failing so bad but i missed you alot today so i was so eager to make this thing.</p>
+  </div>
+  </section>
+  <img src="G:\images for website\miss you twice b.jpg" alt="bear"  >
+  
+  <audio autoplay>
+    <source src="C:\Users\rayan\Downloads\Parsa Salimi - A Waltz for the Clouds.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+</body>
+</html>
